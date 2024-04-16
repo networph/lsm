@@ -55,6 +55,7 @@ this is what it would look like:
 Color_Folder='lavender'
 Color_File='flamingo'
 ```
+make sure to use lowercase so Flamingo would be flamingo.
 Get the colors from below.
 
 ## Colors:
