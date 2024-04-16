@@ -47,7 +47,7 @@ cd lsm
 sudo nano config
 ```
 ## What to put in your config.
-Find below the colors you want, for the folders ill use 
+Find the colors you want, for the folders ill use 
 Lavender, for the files ill use Flamingo.
 
 this is what it would look like:
