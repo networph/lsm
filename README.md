@@ -34,9 +34,28 @@ cd /usr/local/bin
 sudo chmod +x lsm
 ```
 
+
+
 IF THAT DOESNT WORK REMOVE THE FIRST cd 
-    
+
 Now, restart and you should be good!
+## How to make your config?
+```bash
+cd ~/.config
+sudo mkdir lsm
+cd lsm
+sudo nano config
+```
+## What to put in your config.
+Find below the colors you want, for the folders ill use 
+Lavender, for the files ill use Flamingo.
+
+this is what it would look like:
+```bash
+Color_Folder='lavender'
+Color_File='flamingo'
+```
+Get the colors from below.
 
 ## Colors:
 | Color      | Hex Code   | Visual                                       |
