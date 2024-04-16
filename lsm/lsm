@@ -1,80 +1,48 @@
 #!/bin/sh
 
-# Load configuration
-if [ -f ~/.config/lsm/config ]; then
-  . ~/.config/lsm/config
+# Define the location of the configuration file
+config_file="$HOME/.config/lsm/config"
+
+# Check if the configuration file exists and source it
+if [ -f "$config_file" ]; then
+  . "$config_file"
+else
+  echo "Configuration file not found. Please create one at $config_file."
+  exit 1
 fi
 
+# Define function to convert color names to ANSI escape codes
 get_color_code() {
   case "$1" in
-    blue)
-      echo "\033[1;34m"  # Blue, #0000FF
-      ;;
-    orange)
-      echo "\033[0;33m"  # Orange, #FFA500
-      ;;
-    pink)
-      echo "\033[1;35m"  # Pink, #FFC0CB
-      ;;
-    magenta)
-      echo "\033[1;35m"  # Magenta, #FF00FF
-      ;;
-    green)
-      echo "\033[1;32m"  # Green, #008000
-      ;;
-    red)
-      echo "\033[1;31m"  # Red, #FF0000
-      ;;
-    yellow)
-      echo "\033[1;33m"  # Yellow, #FFFF00
-      ;;
-    cyan)
-      echo "\033[1;36m"  # Cyan, #00FFFF
-      ;;
-    white)
-      echo "\033[1;37m"  # White, #FFFFFF
-      ;;
-    gray)
-      echo "\033[1;30m"  # Gray, #808080
-      ;;
-    mauve)
-      echo -e "\033[38;2;198;160;246m"  # Mauve, #C6A0F6
-      ;;
-    rosewater)
-      echo -e "\033[38;2;244;219;214m"  # Rosewater, #F4DBD6
-      ;;
-    flamingo)
-      echo -e "\033[38;2;240;198;198m"  # Flamingo, #F0C6C6
-      ;;
-    lavender)
-      echo -e "\033[38;2;183;189;248m"  # Lavender, #B7BDF8
-      ;;
-    navy)
-      echo -e "\033[38;2;10;25;47m"    # Example Color, #0a192f
-      ;;
-    light_gray)
-      echo -e "\033[38;2;248;248;248m"  # Example Color, #f8f8f8
-      ;;
-    teal)
-      echo -e "\033[38;2;0;180;138m"    # Example Color, #00b48a
-      ;;
-    light_teal)
-      echo -e "\033[38;2;0;209;160m"    # Example Color, #00d1a0
-      ;;
-    *)
-      echo "\033[0m"  # Default no color
-      ;;
+    blue) echo "\033[1;34m" ;;
+    orange) echo "\033[0;33m" ;;
+    pink) echo "\033[1;35m" ;;
+    magenta) echo "\033[1;35m" ;;
+    green) echo "\033[1;32m" ;;
+    red) echo "\033[1;31m" ;;
+    yellow) echo "\033[1;33m" ;;
+    cyan) echo "\033[1;36m" ;;
+    white) echo "\033[1;37m" ;;
+    gray) echo "\033[1;30m" ;;
+    mauve) echo -e "\033[38;2;198;160;246m" ;;
+    rosewater) echo -e "\033[38;2;244;219;214m" ;;
+    flamingo) echo -e "\033[38;2;240;198;198m" ;;
+    lavender) echo -e "\033[38;2;183;189;248m" ;;
+    navy) echo -e "\033[38;2;10;25;47m" ;;
+    light_gray) echo -e "\033[38;2;248;248;248m" ;;
+    teal) echo -e "\033[38;2;0;180;138m" ;;
+    light_teal) echo -e "\033[38;2;0;209;160m" ;;
+    *) echo "\033[0m" ;;  # Default no color
   esac
 }
 
-
-# Fetch color codes
+# Fetch color codes based on configuration
 color_folder=$(get_color_code "$Color_Folder")
 color_file=$(get_color_code "$Color_File")
 
-# Default directory to list
+# Set the default directory to list if no argument is provided
 if [ $# -eq 0 ]; then
-  set -- "."  # Set default argument to current directory if none provided
+  set -- "."  # Set default argument to the current directory
 fi
 
 # Display directory contents with detailed listing like ls -l
