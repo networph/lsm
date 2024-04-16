@@ -30,6 +30,7 @@ git clone https://github.com/networph/lsm
 cd lsm
 cd lsm
 sudo mv lsm /usr/local/bin/lsm
+cd /usr/local/bin
 sudo chmod +x lsm
 ```
 
