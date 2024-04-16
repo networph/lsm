@@ -1,1 +1,95 @@
+#!/bin/sh
 
+# Load configuration
+if [ -f ~/.config/lsm/config ]; then
+  . ~/.config/lsm/config
+fi
+
+get_color_code() {
+  case "$1" in
+    blue)
+      echo "\033[1;34m"  # Blue, #0000FF
+      ;;
+    orange)
+      echo "\033[0;33m"  # Orange, #FFA500
+      ;;
+    pink)
+      echo "\033[1;35m"  # Pink, #FFC0CB
+      ;;
+    magenta)
+      echo "\033[1;35m"  # Magenta, #FF00FF
+      ;;
+    green)
+      echo "\033[1;32m"  # Green, #008000
+      ;;
+    red)
+      echo "\033[1;31m"  # Red, #FF0000
+      ;;
+    yellow)
+      echo "\033[1;33m"  # Yellow, #FFFF00
+      ;;
+    cyan)
+      echo "\033[1;36m"  # Cyan, #00FFFF
+      ;;
+    white)
+      echo "\033[1;37m"  # White, #FFFFFF
+      ;;
+    gray)
+      echo "\033[1;30m"  # Gray, #808080
+      ;;
+    mauve)
+      echo -e "\033[38;2;198;160;246m"  # Mauve, #C6A0F6
+      ;;
+    rosewater)
+      echo -e "\033[38;2;244;219;214m"  # Rosewater, #F4DBD6
+      ;;
+    flamingo)
+      echo -e "\033[38;2;240;198;198m"  # Flamingo, #F0C6C6
+      ;;
+    lavender)
+      echo -e "\033[38;2;183;189;248m"  # Lavender, #B7BDF8
+      ;;
+    navy)
+      echo -e "\033[38;2;10;25;47m"    # Example Color, #0a192f
+      ;;
+    light_gray)
+      echo -e "\033[38;2;248;248;248m"  # Example Color, #f8f8f8
+      ;;
+    teal)
+      echo -e "\033[38;2;0;180;138m"    # Example Color, #00b48a
+      ;;
+    light_teal)
+      echo -e "\033[38;2;0;209;160m"    # Example Color, #00d1a0
+      ;;
+    *)
+      echo "\033[0m"  # Default no color
+      ;;
+  esac
+}
+
+
+# Fetch color codes
+color_folder=$(get_color_code "$Color_Folder")
+color_file=$(get_color_code "$Color_File")
+
+# Default directory to list
+if [ $# -eq 0 ]; then
+  set -- "."  # Set default argument to current directory if none provided
+fi
+
+# Display directory contents with detailed listing like ls -l
+for dir in "$@"; do
+  if [ -d "$dir" ]; then
+    echo -e "$(date +"%Y-%m-%d %H:%M:%S") $(whoami) $dir"
+    # List files and directories with coloring
+    for item in "$dir"/*; do
+      if [ -d "$item" ]; then
+        ls -ldh "${item}" | awk -v color="$color_folder" '{ printf "%s %s %s %s %s %s %s %s ", $1, $2, $3, $4, $5, $6, $7, $8; printf color "%s\033[0m\n", $9 }'
+      else
+        ls -ldh "${item}" | awk -v color="$color_file" '{ printf "%s %s %s %s %s %s %s %s ", $1, $2, $3, $4, $5, $6, $7, $8; printf color "%s\033[0m\n", $9 }'
+      fi
+    done
+  else
+    echo "$dir is not a directory"
+  fi
+done
