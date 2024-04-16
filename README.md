@@ -30,7 +30,10 @@ git clone https://github.com/networph/lsm
 cd lsm
 cd lsm
 sudo mv lsm /usr/local/bin/lsm
+sudo chmod +x lsm
 ```
+
+IF THAT DOESNT WORK REMOVE THE FIRST cd 
     
 Now, restart and you should be good!
 
