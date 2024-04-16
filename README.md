@@ -26,9 +26,8 @@ sudo apt install git
 then,
 ```bash
 cd
-git clone https://github.com/networph/lsm/blob/main/lsm/lsm
+git clone https://github.com/networph/lsm
 cd lsm
-cd src
 sudo mv lsm /usr/local/bin/lsm
 ```
     
