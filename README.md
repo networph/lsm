@@ -67,26 +67,35 @@ make sure to use lowercase so Flamingo would be flamingo.
 Get the colors from below.
 
 ## Colors:
-| Color      | Hex Code   | Visual                                       |
-|------------|------------|----------------------------------------------|
-| blue       | #0000FF    | ![#0000FF](https://via.placeholder.com/10/0000FF?text=+) |
-| orange     | #FFA500    | ![#FFA500](https://via.placeholder.com/10/FFA500?text=+) |
-| pink       | #FFC0CB    | ![#FFC0CB](https://via.placeholder.com/10/FFC0CB?text=+) |
-| magenta    | #FF00FF    | ![#FF00FF](https://via.placeholder.com/10/FF00FF?text=+) |
-| green      | #008000    | ![#008000](https://via.placeholder.com/10/008000?text=+) |
-| red        | #FF0000    | ![#FF0000](https://via.placeholder.com/10/FF0000?text=+) |
-| yellow     | #FFFF00    | ![#FFFF00](https://via.placeholder.com/10/FFFF00?text=+) |
-| cyan       | #00FFFF    | ![#00FFFF](https://via.placeholder.com/10/00FFFF?text=+) |
-| white      | #FFFFFF    | ![#FFFFFF](https://via.placeholder.com/10/FFFFFF?text=+) |
-| gray       | #808080    | ![#808080](https://via.placeholder.com/10/808080?text=+) |
-| mauve      | #C6A0F6    | ![#C6A0F6](https://via.placeholder.com/10/C6A0F6?text=+) |
-| rosewater  | #F4DBD6    | ![#F4DBD6](https://via.placeholder.com/10/F4DBD6?text=+) |
-| flamingo   | #F0C6C6    | ![#F0C6C6](https://via.placeholder.com/10/F0C6C6?text=+) |
-| lavender   | #B7BDF8    | ![#B7BDF8](https://via.placeholder.com/10/B7BDF8?text=+) |
-| navy       | #0a192f    | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) |
-| light Gray | #f8f8f8    | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) |
-| teal       | #00b48a    | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) |
-| light_teal | #00d1a0    | ![#00d1a0](https://via.placeholder.com/10/00d1a0?text=+) |
+## Colors:
+| Color              | Hex Code   | Visual                                       |
+|--------------------|------------|----------------------------------------------|
+| blue               | #0000FF    | ![#0000FF](https://via.placeholder.com/10/0000FF?text=+) |
+| orange             | #FFA500    | ![#FFA500](https://via.placeholder.com/10/FFA500?text=+) |
+| pink               | #FFC0CB    | ![#FFC0CB](https://via.placeholder.com/10/FFC0CB?text=+) |
+| magenta            | #FF00FF    | ![#FF00FF](https://via.placeholder.com/10/FF00FF?text=+) |
+| green              | #008000    | ![#008000](https://via.placeholder.com/10/008000?text=+) |
+| red                | #FF0000    | ![#FF0000](https://via.placeholder.com/10/FF0000?text=+) |
+| yellow             | #FFFF00    | ![#FFFF00](https://via.placeholder.com/10/FFFF00?text=+) |
+| cyan               | #00FFFF    | ![#00FFFF](https://via.placeholder.com/10/00FFFF?text=+) |
+| white              | #FFFFFF    | ![#FFFFFF](https://via.placeholder.com/10/FFFFFF?text=+) |
+| gray               | #808080    | ![#808080](https://via.placeholder.com/10/808080?text=+) |
+| mauve              | #C6A0F6    | ![#C6A0F6](https://via.placeholder.com/10/C6A0F6?text=+) |
+| rosewater          | #F4DBD6    | ![#F4DBD6](https://via.placeholder.com/10/F4DBD6?text=+) |
+| flamingo           | #F0C6C6    | ![#F0C6C6](https://via.placeholder.com/10/F0C6C6?text=+) |
+| lavender           | #B7BDF8    | ![#B7BDF8](https://via.placeholder.com/10/B7BDF8?text=+) |
+| navy               | #0a192f    | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) |
+| light gray         | #f8f8f8    | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) |
+| teal               | #00b48a    | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) |
+| light teal         | #00d1a0    | ![#00d1a0](https://via.placeholder.com/10/00d1a0?text=+) |
+| fresh green        | #A6DA95    | ![#A6DA95](https://via.placeholder.com/10/A6DA95?text=+) |
+| catppuccin mocha   | #4B4152    | ![#4B4152](https://via.placeholder.com/10/4B4152?text=+) |
+| catppuccin frappe  | #C2A494    | ![#C2A494](https://via.placeholder.com/10/C2A494?text=+) |
+| catppuccin macchiato | #9D795C  | ![#9D795C](https://via.placeholder.com/10/9D795C?text=+) |
+| catppuccin latte   | #D6D2C4    | ![#D6D2C4](https://via.placeholder.com/10/D6D2C4?text=+) |
+| pastel pink        | #EDB3C7    | ![#EDB3C7](https://via.placeholder.com/10/EDB3C7?text=+) |
+| pastel yellow      | #F3F3BC    | ![#F3F3BC](https://via.placeholder.com/10/F3F3BC?text=
+
 
 ## Documentation
 
