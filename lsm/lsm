@@ -32,6 +32,16 @@ get_color_code() {
     light_gray) echo -e "\033[38;2;248;248;248m" ;;
     teal) echo -e "\033[38;2;0;180;138m" ;;
     light_teal) echo -e "\033[38;2;0;209;160m" ;;
+    fresh_green) echo -e "\033[38;2;166;218;149m" ;;
+    catppuccin_mocha) echo -e "\033[38;2;75;65;82m" ;;
+    catppuccin_frappe) echo -e "\033[38;2;194;164;148m" ;;
+    catppuccin_macchiato) echo -e "\033[38;2;157;121;92m" ;;
+    catppuccin_latte) echo -e "\033[38;2;214;210;196m" ;;
+    pastel_pink) echo -e "\033[38;2;237;179;199m" ;;
+    pastel_yellow) echo -e "\033[38;2;243;243;188m" ;;
+    pale_blue) echo -e "\033[38;2;156;197;227m" ;;
+    pale_green) echo -e "\033[38;2;189;233;190m" ;;
+    pale_purple) echo -e "\033[38;2;177;156;217m" ;;
     *) echo "\033[0m" ;;  # Default no color
   esac
 }
@@ -49,15 +59,31 @@ fi
 for dir in "$@"; do
   if [ -d "$dir" ]; then
     echo -e "$(date +"%Y-%m-%d %H:%M:%S") $(whoami) $dir"
-    # List files and directories with coloring
-    for item in "$dir"/*; do
-      if [ -d "$item" ]; then
-        ls -ldh "${item}" | awk -v color="$color_folder" '{ printf "%s %s %s %s %s %s %s %s ", $1, $2, $3, $4, $5, $6, $7, $8; printf color "%s\033[0m\n", $9 }'
-      else
-        ls -ldh "${item}" | awk -v color="$color_file" '{ printf "%s %s %s %s %s %s %s %s ", $1, $2, $3, $4, $5, $6, $7, $8; printf color "%s\033[0m\n", $9 }'
-      fi
-    done
+    # List files and directories with coloring, include hidden if Show_Dots is true
+    if [ "$Show_Dots" = "true" ]; then
+      file_pattern=".* *"
+    else
+      file_pattern="*"
+    fi
+
+    # Check if the directory is not empty
+    shopt -s nullglob dotglob
+    items=($dir/$file_pattern)
+    shopt -u nullglob dotglob
+
+    if [ ${#items[@]} -eq 0 ]; then
+      echo "No files in $dir"
+    else
+      for item in "${items[@]}"; do
+        if [ -d "$item" ]; then
+          ls -ldh "${item}" | awk -v color="$color_folder" '{ printf "%s %s %s %s %s %s %s %s ", $1, $2, $3, $4, $5, $6, $7, $8; printf color "%s\033[0m\n", $9 }'
+        else
+          ls -ldh "${item}" | awk -v color="$color_file" '{ printf "%s %s %s %s %s %s %s %s ", $1, $2, $3, $4, $5, $6, $7, $8; printf color "%s\033[0m\n", $9 }'
+        fi
+      done
+    fi
   else
     echo "$dir is not a directory"
   fi
 done
+
