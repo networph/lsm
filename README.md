@@ -66,7 +66,7 @@ Show_Dots='true'
 make sure to use lowercase so Flamingo would be flamingo.
 Get the colors from below.
 
-## Colors:
+
 ## Colors:
 | Color              | Hex Code   | Visual                                       |
 |--------------------|------------|----------------------------------------------|
@@ -94,7 +94,11 @@ Get the colors from below.
 | catppuccin macchiato | #9D795C  | ![#9D795C](https://via.placeholder.com/10/9D795C?text=+) |
 | catppuccin latte   | #D6D2C4    | ![#D6D2C4](https://via.placeholder.com/10/D6D2C4?text=+) |
 | pastel pink        | #EDB3C7    | ![#EDB3C7](https://via.placeholder.com/10/EDB3C7?text=+) |
-| pastel yellow      | #F3F3BC    | ![#F3F3BC](https://via.placeholder.com/10/F3F3BC?text=
+| pastel yellow      | #F3F3BC    | ![#F3F3BC](https://via.placeholder.com/10/F3F3BC?text=+) |
+| pale blue          | #9CC5E3    | ![#9CC5E3](https://via.placeholder.com/10/9CC5E3?text=+) |
+| pale green         | #BDE9BE    | ![#BDE9BE](https://via.placeholder.com/10/BDE9BE?text=+) |
+| pale purple        | #B19CD9    | ![#B19CD9](https://via.placeholder.com/10/B19CD9?text=+) |
+
 
 
 ## Documentation
