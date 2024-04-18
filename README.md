@@ -52,8 +52,16 @@ Lavender, for the files ill use Flamingo.
 
 this is what it would look like:
 ```bash
+
+# Configuration for lsm script
+
+# Define colors for folders and files using the function names in the script
 Color_Folder='lavender'
 Color_File='flamingo'
+
+# Option to show hidden files (.dot files)
+Show_Dots='true'
+
 ```
 make sure to use lowercase so Flamingo would be flamingo.
 Get the colors from below.
