@@ -11,49 +11,49 @@ else
   exit 1
 fi
 
-# Define function to convert color names to ANSI escape codes
 get_color_code() {
   case "$1" in
-    blue) echo "\033[1;34m" ;;
-    orange) echo "\033[0;33m" ;;
-    pink) echo "\033[1;35m" ;;
-    magenta) echo "\033[1;35m" ;;
-    green) echo "\033[1;32m" ;;
-    red) echo "\033[1;31m" ;;
-    yellow) echo "\033[1;33m" ;;
-    cyan) echo "\033[1;36m" ;;
-    white) echo "\033[1;37m" ;;
-    gray) echo "\033[1;30m" ;;
-    mauve) echo -e "\033[38;2;198;160;246m" ;;
-    rosewater) echo -e "\033[38;2;244;219;214m" ;;
-    flamingo) echo -e "\033[38;2;240;198;198m" ;;
-    lavender) echo -e "\033[38;2;183;189;248m" ;;
-    navy) echo -e "\033[38;2;10;25;47m" ;;
-    light_gray) echo -e "\033[38;2;248;248;248m" ;;
-    teal) echo -e "\033[38;2;0;180;138m" ;;
-    light_teal) echo -e "\033[38;2;0;209;160m" ;;
-    fresh_green) echo -e "\033[38;2;166;218;149m" ;;
-    catppuccin_mocha) echo -e "\033[38;2;75;65;82m" ;;
-    catppuccin_frappe) echo -e "\033[38;2;194;164;148m" ;;
-    catppuccin_macchiato) echo -e "\033[38;2;157;121;92m" ;;
-    catppuccin_latte) echo -e "\033[38;2;214;210;196m" ;;
-    pastel_pink) echo -e "\033[38;2;237;179;199m" ;;
-    pastel_yellow) echo -e "\033[38;2;243;243;188m" ;;
-    pale_blue) echo -e "\033[38;2;156;197;227m" ;;
-    pale_green) echo -e "\033[38;2;189;233;190m" ;;
-    pale_purple) echo -e "\033[38;2;177;156;217m" ;;
-    black) echo -e "\033[38;2;40;40;40m" ;;
-    red) echo -e "\033[38;2;204;102;102m" ;;
-    green) echo -e "\033[38;2;102;204;102m" ;;
-    yellow) echo -e "\033[38;2;204;204;102m" ;;
-    blue) echo -e "\033[38;2;102;102;204m" ;;
-    magenta) echo -e "\033[38;2;204;102;204m" ;;
-    cyan) echo -e "\033[38;2;102;204;204m" ;;
-    white) echo -e "\033[38;2;204;204;204m" ;;
-    gray) echo -e "\033[38;2;102;102;102m" ;;
+    blue) echo "\033[38;2;70;121;180m" ;;
+    orange) echo "\033[38;2;203;75;22m" ;;
+    pink) echo "\033[38;2;211;134;155m" ;;
+    magenta) echo "\033[38;2;204;102;204m" ;;
+    green) echo "\033[38;2;152;161;38m" ;;
+    red) echo "\033[38;2;204;36;29m" ;;
+    yellow) echo "\033[38;2;181;137;0m" ;;
+    cyan) echo "\033[38;2;131;165;152m" ;;
+    white) echo "\033[38;2;204;204;204m" ;;
+    gray) echo "\033[38;2;133;133;133m" ;;
+    mauve) echo "\033[38;2;198;160;246m" ;;
+    rosewater) echo "\033[38;2;244;219;214m" ;;
+    flamingo) echo "\033[38;2;240;198;198m" ;;
+    lavender) echo "\033[38;2;183;189;248m" ;;
+    navy) echo "\033[38;2;10;25;47m" ;;
+    light_gray) echo "\033[38;2;248;248;248m" ;;
+    teal) echo "\033[38;2;0;180;138m" ;;
+    light_teal) echo "\033[38;2;0;209;160m" ;;
+    fresh_green) echo "\033[38;2;166;218;149m" ;;
+    catppuccin_mocha) echo "\033[38;2;75;65;82m" ;;
+    catppuccin_frappe) echo "\033[38;2;194;164;148m" ;;
+    catppuccin_macchiato) echo "\033[38;2;157;121;92m" ;;
+    catppuccin_latte) echo "\033[38;2;214;210;196m" ;;
+    pastel_pink) echo "\033[38;2;237;179;199m" ;;
+    pastel_yellow) echo "\033[38;2;243;243;188m" ;;
+    pale_blue) echo "\033[38;2;156;197;227m" ;;
+    pale_green) echo "\033[38;2;189;233;190m" ;;
+    pale_purple) echo "\033[38;2;177;156;217m" ;;
+    gruvbox_black) echo "\033[38;2;40;40;40m" ;;
+    gruvbox_red) echo "\033[38;2;204;102;102m" ;;
+    gruvbox_green) echo "\033[38;2;102;204;102m" ;;
+    gruvbox_yellow) echo "\033[38;2;204;204;102m" ;;
+    gruvbox_blue) echo "\033[38;2;102;102;204m" ;;
+    gruvbox_magenta) echo "\033[38;2;204;102;204m" ;;
+    gruvbox_cyan) echo "\033[38;2;102;204;204m" ;;
+    gruvbox_white) echo "\033[38;2;204;204;204m" ;;
+    gruvbox_gray) echo "\033[38;2;102;102;102m" ;;
     *) echo "\033[0m" ;;  # Default no color
   esac
 }
+
 
 
 # Fetch color codes based on configuration
