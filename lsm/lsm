@@ -42,9 +42,19 @@ get_color_code() {
     pale_blue) echo -e "\033[38;2;156;197;227m" ;;
     pale_green) echo -e "\033[38;2;189;233;190m" ;;
     pale_purple) echo -e "\033[38;2;177;156;217m" ;;
+    black) echo -e "\033[38;2;40;40;40m" ;;
+    red) echo -e "\033[38;2;204;102;102m" ;;
+    green) echo -e "\033[38;2;102;204;102m" ;;
+    yellow) echo -e "\033[38;2;204;204;102m" ;;
+    blue) echo -e "\033[38;2;102;102;204m" ;;
+    magenta) echo -e "\033[38;2;204;102;204m" ;;
+    cyan) echo -e "\033[38;2;102;204;204m" ;;
+    white) echo -e "\033[38;2;204;204;204m" ;;
+    gray) echo -e "\033[38;2;102;102;102m" ;;
     *) echo "\033[0m" ;;  # Default no color
   esac
 }
+
 
 # Fetch color codes based on configuration
 color_folder=$(get_color_code "$Color_Folder")
