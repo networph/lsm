@@ -43,8 +43,8 @@ get_color_code() {
     pale_purple) echo "\033[38;2;177;156;217m" ;;
     gruvbox_black) echo "\033[38;2;40;40;40m" ;;
     gruvbox_red) echo "\033[38;2;204;102;102m" ;;
-    gruvbox_green) echo "\033[38;2;102;204;102m" ;;
-    gruvbox_yellow) echo "\033[38;2;204;204;102m" ;;
+    gruvbox_green) echo "\033[38;2;152;161;38m" ;;
+    gruvbox_yellow) echo "\033[38;2;215;153;33m" ;;
     gruvbox_blue) echo "\033[38;2;102;102;204m" ;;
     gruvbox_magenta) echo "\033[38;2;204;102;204m" ;;
     gruvbox_cyan) echo "\033[38;2;102;204;204m" ;;
