@@ -67,7 +67,6 @@ make sure to use lowercase so Flamingo would be flamingo.
 Get the colors from below.
 
 
-## Colors:
 | Color              | Hex Code   | Visual                                       |
 |--------------------|------------|----------------------------------------------|
 | blue               | #0000FF    | ![#0000FF](https://via.placeholder.com/10/0000FF?text=+) |
@@ -98,6 +97,15 @@ Get the colors from below.
 | pale blue          | #9CC5E3    | ![#9CC5E3](https://via.placeholder.com/10/9CC5E3?text=+) |
 | pale green         | #BDE9BE    | ![#BDE9BE](https://via.placeholder.com/10/BDE9BE?text=+) |
 | pale purple        | #B19CD9    | ![#B19CD9](https://via.placeholder.com/10/B19CD9?text=+) |
+| gruvbox black      | #282828    | ![#282828](https://via.placeholder.com/10/282828?text=+) |
+| gruvbox red        | #cc241d    | ![#cc241d](https://via.placeholder.com/10/cc241d?text=+) |
+| gruvbox green      | #98971a    | ![#98971a](https://via.placeholder.com/10/98971a?text=+) |
+| gruvbox yellow     | #d79921    | ![#d79921](https://via.placeholder.com/10/d79921?text=+) |
+| gruvbox blue       | #458588    | ![#458588](https://via.placeholder.com/10/458588?text=+) |
+| gruvbox magenta    | #b16286    | ![#b16286](https://via.placeholder.com/10/b16286?text=+) |
+| gruvbox cyan       | #689d6a    | ![#689d6a](https://via.placeholder.com/10/689d6a?text=+) |
+| gruvbox white      | #a89984    | ![#a89984](https://via.placeholder.com/10/a89984?text=+) |
+
 
 
 
