@@ -110,7 +110,7 @@ Get the colors from below.
 | gruvbox white      | #a89984    | ![#a89984](https://via.placeholder.com/10/a89984?text=+) |
 
 
-
+**PLEASE FOR SPACES USE _ SO gruvbox_white**
 
 ## Documentation
 
