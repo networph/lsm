@@ -1,8 +1,11 @@
 
 # Lsm.
 
-lsm is a modded ls with nice colors and an easy config file.
-You can even add your own colors if you want. I will add tons of colors each day, mostly. And I will also add more stuff and nice features.
+lsm is a modded ls, with some nice colors.
+please feel free to copy the code and add more colors/features if you want.
+also dm me features at @12315147123175461837127361763167 on discord, thanks.
+
+!PLEASE DM ME MORE PROJECT IDEAS!
 ## Installation
 
 The Installation. 
